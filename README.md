@@ -3,6 +3,9 @@
 
 A simple python application made as a way of studying and solving a personal problem.
 
+# Original Game
+https://foodtycoon.frvr.com/
+
 # Badges
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
 
