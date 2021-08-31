@@ -151,12 +151,26 @@ def done():
         sleep(.5)
         pos_done = pygu.locateOnScreen("img/done.JPG", confidence=.8)
 
-def verifyOrder(id):
+def verifyOrder(pos):
     global orders
     for o in orders:
-        if o == id:
+        if str(o) == str(pos):
             return 1
     return 0            
+
+
+def takeOrder ():
+    global orders
+
+    # varrendo menu, procurando por pedidos
+    for m in menu:
+        pos = pygu.locateOnScreen(m['img'], confidence=.8)
+        if (pos):
+
+            # verificando se o pedido já está na lista
+            if (verifyOrder(pos)): return 0
+
+            orders.append(str(pos))
 
 def getOrder (amount):
     global orders
@@ -171,7 +185,7 @@ def getOrder (amount):
 
             if(verifyOrder(m['id']) == False):
 
-                orders.append(m['id'])
+                orders.append(str(pos))
 
                 # print(orders)
             
