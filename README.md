@@ -1,4 +1,4 @@
-# Food Tycoon Bot 🤖
+# Food Tycoon Bot 🍩☕
 #### Automation with Python
 
 A simple python application made as a way of studying and solving a personal problem.
