@@ -13,18 +13,35 @@ https://foodtycoon.frvr.com/
 
 Install [python3](https://www.python.org/downloads/) to use the library
 
+Create the Virtual Env Python
+```sh
+python3 -m venv /path/to/new/virtual/environment
+```
+
+Activate the venv (Linux)
+```sh
+venv\bin\activate
+```
+
+Activate the venv (Windows)
+```sh
+venv\Scripts\activate.bat
+```
+
 Whith python installed use the commands to install the libraries
 ```bash
-pip3 install opencv-python
-pip3 install pyautogui
-pip3 install pyperclip
+pip3 install -r requirements.txt
 ```
 # Running
 
-Run the command considering the path where you saved the project
+Open the game in your browser and finish all tutorial
+>https://foodtycoon.frvr.com/
+
+
+Run the command considering the path where you saved the project and open game in main screeen maximized
 
 ```bash
-python3 wpbot.py
+python3 app.py
 ```
 
 # Important
